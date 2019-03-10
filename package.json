@@ -4,6 +4,7 @@
   "description": "Extremely small and modern debounce library (smaller than tiny-debounce)",
   "main": "dist/index.min.js",
   "module": "dist/index.min.mjs",
+  "types": "index.d.ts",
   "repository": "git@github.com:ChrisBrownie55/mini-debounce.git",
   "author": "Christopher Holden Brown <chbphone55@gmail.com> (https://chrisbrown.netlify.com)",
   "license": "GPL-3.0-or-later",
