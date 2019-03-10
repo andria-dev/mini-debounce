@@ -12,7 +12,8 @@
   "bugs": "https://github.com/ChrisBrownie55/mini-debounce/issues",
   "repository": "git@github.com:ChrisBrownie55/mini-debounce.git",
   "files": [
-    "dist/**"
+    "dist/**",
+    "index.d.ts"
   ],
   "scripts": {
     "build:node": "terser ./index.js -c -m -o ./dist/index.min.js",
