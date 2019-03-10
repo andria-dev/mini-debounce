@@ -27,6 +27,10 @@ npm install mini-debounce
 | -------- | ---------------------------------------------------------------------------------------------------------------- |
 | Function | Returns the new debounced function, once called the previous timeout is cancelled and a new timeout is initiated |
 
+_"Okay but what does that function return?"_
+
+It returns the id from `setTimeout` which allows you to run `clearTimeout` in order to cancel the debounced call.
+
 ## First let's import it
 
 The function is not exported as `default` as to provide better intellisense.
