@@ -1,0 +1,22 @@
+{
+  "name": "mini-debounce",
+  "version": "1.0.0",
+  "description": "Extremely small and modern debounce library (smaller than tiny-debounce)",
+  "main": "dist/index.min.js",
+  "module": "dist/index.min.mjs",
+  "repository": "git@github.com:ChrisBrownie55/mini-debounce.git",
+  "author": "Christopher Holden Brown <chbphone55@gmail.com> (https://chrisbrown.netlify.com)",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build:node": "terser ./index.js -c -m -o ./dist/index.min.js",
+    "build:module": "terser ./index.mjs -c -m -o ./dist/index.min.mjs",
+    "build": "yarn run build:node && yarn run build:module"
+  },
+  "devDependencies": {
+    "terser": "^3.16.1"
+  }
+}
