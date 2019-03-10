@@ -1,2 +1,5 @@
-declare function debounce(callback: Function, timeout: number): () => NodeJS.Timeout | number;
+declare function debounce(
+  callback: Function,
+  timeout: number
+): (...args: any[]) => NodeJS.Timeout | number;
 export { debounce };
