@@ -1,6 +1,6 @@
 {
   "name": "mini-debounce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extremely small and modern debounce library (smaller than tiny-debounce)",
   "main": "dist/index.min.js",
   "module": "dist/index.min.mjs",
