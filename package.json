@@ -1,7 +1,15 @@
 {
-  "keywords": ["debounce", "mini", "tiny", "small", "tiny-debounce", "ts-debounce", "mini-debounce"],
+  "keywords": [
+    "debounce",
+    "mini",
+    "tiny",
+    "small",
+    "tiny-debounce",
+    "ts-debounce",
+    "mini-debounce"
+  ],
   "name": "mini-debounce",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Extremely small and modern debounce library (smaller than tiny-debounce)",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
@@ -28,6 +36,8 @@
     "terser": "^3.16.1"
   },
   "ava": {
-    "require": ["esm"]
+    "require": [
+      "esm"
+    ]
   }
 }
