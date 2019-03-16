@@ -1,4 +1,4 @@
-exports.debounce = (callback, timeout) => {
+export let debounce = (callback, timeout) => {
   let id;
   return (...args) => {
     clearTimeout(id);
