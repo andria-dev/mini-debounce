@@ -1,4 +1,5 @@
 {
+  "keywords": ["debounce", "mini", "tiny", "small", "tiny-debounce", "ts-debounce", "mini-debounce"],
   "name": "mini-debounce",
   "version": "1.0.3",
   "description": "Extremely small and modern debounce library (smaller than tiny-debounce)",
