@@ -109,4 +109,4 @@ function Search() {
 
 # License
 
-[MIT License](https://github.com/ChrisBrownie55/mini-debounce/blob/master/LICENSE) Copyright © 2018 Christopher Holden Brown
+[MIT License](https://github.com/ChrisBrownie55/mini-debounce/blob/master/LICENSE) Copyright © 2019 Christopher Holden Brown

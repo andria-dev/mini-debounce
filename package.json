@@ -16,7 +16,7 @@
   "umd:main": "dist/index.umd.js",
   "types": "index.d.ts",
   "author": "Christopher Holden Brown <chbphone55@gmail.com> (https://chrisbrown.netlify.com)",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "private": false,
   "homepage": "https://github.com/ChrisBrownie55/mini-debounce",
   "bugs": "https://github.com/ChrisBrownie55/mini-debounce/issues",
