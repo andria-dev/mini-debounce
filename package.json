@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Extremely small and modern debounce library (smaller than tiny-debounce)",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/index.m.js",
   "umd:main": "dist/index.umd.js",
   "types": "index.d.ts",
   "author": "Christopher Holden Brown <chbphone55@gmail.com> (https://chrisbrown.netlify.com)",
@@ -17,11 +17,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "rm -r dist/ && microbundle --no-sourcemap",
+    "build": "rm -r dist/ && microbundle --raw --no-sourcemap",
     "test": "ava"
-  },
-  "mangle": {
-    "regex": "^_"
   },
   "devDependencies": {
     "ava": "^1.3.1",
