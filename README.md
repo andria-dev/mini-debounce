@@ -36,29 +36,29 @@ It returns the id from `setTimeout` which allows you to run `clearTimeout` in or
 The function is not exported as `default` as to provide better intellisense.
 
 ```js
-import { debounce } from 'mini-debounce';
+import {debounce} from 'mini-debounce'
 // or
-const { debounce } = require('mini-debounce');
+const {debounce} = require('mini-debounce')
 ```
 
 ## Now let's use it:
 
 ```js
 // Create the debounced function
-const debouncedLog = debounce(x => console.log('[LOG]', x), 1000);
+const debouncedLog = debounce(x => console.log('[LOG]', x), 1000)
 
 // Use it
-debouncedLog('Hello...');
-debouncedLog("It's me");
-debouncedLog('I was wondering');
-debouncedLog('if after all');
+debouncedLog('Hello...')
+debouncedLog("It's me")
+debouncedLog('I was wondering')
+debouncedLog('if after all')
 
 // 1000 milliseconds later
 // => "[LOG] if after all"
 
 // You can cancel them as well
-const id = debouncedLog('This will never appear');
-clearTimeout(id);
+const id = debouncedLog('This will never appear')
+clearTimeout(id)
 ```
 
 ## How about in a React component
@@ -67,43 +67,43 @@ Here we'll demonstrate an implementation of a debounced search input.
 
 ```jsx
 class Search {
-  state = { query: '' };
+	state = {query: ''}
 
-  search = debounce(query => {
-    /* this will only be run 1000 milliseconds after no changes */
-    fetch(`https://example.com/api?q=${query}`).then(/* do whatever */);
-  }, 1000);
+	search = debounce(query => {
+		/* this will only be run 1000 milliseconds after no changes */
+		fetch(`https://example.com/api?q=${query}`).then(/* do whatever */)
+	}, 1000)
 
-  handleChange = event => {
-    const query = event.target.value;
+	handleChange = event => {
+		const query = event.target.value
 
-    this.setState({ query });
-    this.search(query);
-  };
+		this.setState({query})
+		this.search(query)
+	}
 
-  render() {
-    return <input value={this.state.query} onChange={this.handleChange} />;
-  }
+	render() {
+		return <input value={this.state.query} onChange={this.handleChange} />
+	}
 }
 ```
 
 ```jsx
 // Now as a function
 function Search() {
-  const [query, setQuery] = useState('');
+	const [query, setQuery] = useState('')
 
-  const search = debounce(query => {
-    fetch(/* you know */).then(/* do whatever */);
-  }, 1000);
+	const search = debounce(query => {
+		fetch(/* you know */).then(/* do whatever */)
+	}, 1000)
 
-  function handleChange(event) {
-    const query = event.target.value;
+	function handleChange(event) {
+		const query = event.target.value
 
-    setQuery(query);
-    search(query);
-  }
+		setQuery(query)
+		search(query)
+	}
 
-  return <input value={query} onChange={handleChange} />;
+	return <input value={query} onChange={handleChange} />
 }
 ```
 
